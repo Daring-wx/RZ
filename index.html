@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>自律之星 - 任拯同学</title>
+    <style>
+        /* 基础样式 */
+        body {
+            font-family: 'Microsoft Yahei', sans-serif;
+            background: #f0f8ff;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* 照片墙布局 */
+        .photo-wall {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin: 30px 0;
+        }
+        .photo-item {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .photo-item:hover {
+            transform: translateY(-5px);
+        }
+        .photo-item img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border: 3px solid #fff;
+        }
+
+        /* 夸赞区域 */
+        .praise-box {
+            background: linear-gradient(135deg, #fff3e0, #ffe0b2);
+            padding: 25px;
+            border-radius: 15px;
+            margin: 20px 0;
+            position: relative;
+        }
+        .praise-box::before {
+            content: "🌟";
+            font-size: 40px;
+            position: absolute;
+            top: -20px;
+            left: -20px;
+        }
+
+        /* 动画效果 */
+        @keyframes shine {
+            0% { opacity: 0.8; }
+            50% { opacity: 1; }
+            100% { opacity: 0.8; }
+        }
+        .encourage {
+            text-align: center;
+            font-size: 24px;
+            color: #d32f2f;
+            animation: shine 2s infinite;
+            margin: 30px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center; color: #2c3e50;">🏆 数学之星 - 任拯 🏆</h1>
+    
+    <div class="photo-wall">
+        <!-- 替换以下src为你的实际图片路径 -->
+        <div class="photo-item">
+            <h3>路边emo照</h3>
+            <img src="1.jpg" alt="认真学习照">
+        </div>
+        <div class="photo-item">
+            <h3>桀骜不驯照</h3>
+            <img src="2.jpg" alt="团队讨论照">
+        </div>
+        <div class="photo-item">
+            <h3>团队讨论-深夜奋斗照</h3>
+            <img src="3.jpg" alt="团队讨论-深夜奋斗照">
+        </div>
+    </div>
+
+    <div class="praise-box">
+        <h2 style="color: #e65100;">✨ 三大闪光点 ✨</h2>
+        <ul>
+            <li>✅ <strong>极致自律</strong>：每日坚持学习到凌晨，高数书页已翻出岁月的痕迹</li>
+            <li>✅ <strong>团队楷模</strong>：交流时如春风化雨，队友眼中的"解题永动机"</li>
+            <li>✅ <strong>时间管理大师</strong>：在星辰与黎明的交替中，走出属于自己的成功之路</li>
+        </ul>
+    </div>
+
+    <div class="encourage">
+        🚀 你的坚持终将照亮前程！<br>
+        ⏰ 注意劳逸结合，我们与你同行！
+    </div>
+
+    <div style="text-align: center; color: #666; margin-top: 40px;">
+        <small>本页面由您的好友用心制作 · 更新于2025年3月1日</small>
+    </div>
+</body>
+</html>
